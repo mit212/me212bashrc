@@ -1,0 +1,18 @@
+[global_config]
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = Monospace 11
+    background_color = "#ffffdd"
+    background_image = None
+    foreground_color = "#000000"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
