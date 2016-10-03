@@ -128,6 +128,18 @@ case $ENV in
        fi
        ;;
     "lab3_sol") source /home/robot/software/me212lab/lab3_sol/software/config/environment.sh;;
+    "lab4")
+       if [ -f ~/me212lab4/software/config/environment.sh ]; then
+         source ~/me212lab4/software/config/environment.sh
+       fi
+       ;;
+    "lab4_sol") source /home/robot/software/me212lab/lab4_sol/software/config/environment.sh;;
+    "lab5")
+       if [ -f ~/me212lab5/software/config/environment.sh ]; then
+         source ~/me212lab5/software/config/environment.sh
+       fi
+       ;;
+    "lab5_sol") source /home/robot/software/me212lab/lab5_sol/software/config/environment.sh;;
 esac
     
 # Please try "setenv lab1/lab2" to switch environment, and rebash
