@@ -1,5 +1,5 @@
 if [ ! -f ~/.env ]; then
-echo 'pokebot' > ~/.env
+echo 'prc' > ~/.env
 fi
 ENV=`cat ~/.env`
 
@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source /opt/ros/indigo/setup.bash
+source /opt/ros/kinetic/setup.bash
 case $ENV in
     "lab2") 
        if [ -f ~/me212lab2/catkin_ws/devel/setup.bash ]; then
@@ -143,7 +143,12 @@ case $ENV in
        fi
        ;;
     "lab5_sol") source $HOME/software/me212lab/lab5_sol/software/config/environment.sh;;
-    "pokebot") source $HOME/pokebot/software/config/pokebot_environment.sh
+    "pokebot") source $HOME/pokebot/software/config/pokebot_environment.sh;;
+    "prc") 
+       if [ -f $HOME/prc/software/config/environment.sh ]; then
+         source $HOME/prc/software/config/environment.sh
+       fi
+       ;;
 esac
     
 # Please try "setenv lab1/lab2" to switch environment, and rebash
