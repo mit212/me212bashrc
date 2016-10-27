@@ -149,6 +149,11 @@ case $ENV in
          source $HOME/prc/software/config/environment.sh
        fi
        ;;
+     *)
+       if [ -f $HOME/$ENV/software/config/environment.sh ]; then
+         source $HOME/$ENV/software/config/environment.sh
+       fi
+       ;;
 esac
     
 # Please try "setenv lab1/lab2" to switch environment, and rebash
