@@ -10,4 +10,6 @@ if [ "$#" == 0 ] || [ "$1" == "BASH" ]; then
   fi
   ln -s "$HOME/me212bashrc/.bashrc" "$HOME/.bashrc"
   ln -s "$HOME/me212bashrc/.bash_aliases" "$HOME/.bash_aliases"
+  cp -r $HOME/me212bashrc/.config $HOME/.config
+  cp -r $HOME/me212bashrc/.local $HOME/.local
 fi

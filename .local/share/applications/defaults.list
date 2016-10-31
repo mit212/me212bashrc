@@ -1,0 +1,23 @@
+[Default Applications]
+text/abiword=abiword.desktop
+text/calendar=evolution.desktop
+text/comma-separated-values=libreoffice-calc.desktop
+text/csv=libreoffice-calc.desktop
+text/html=firefox.desktop
+text/plain=geany.desktop
+text/richtext=abiword.desktop
+text/rtf=libreoffice-writer.desktop
+text/spreadsheet=libreoffice-calc.desktop
+text/tab-separated-values=libreoffice-calc.desktop
+text/x-comma-separated-values=libreoffice-calc.desktop
+text/x-c++hdr=geany.desktop
+text/x-c++src=geany.desktop
+text/x-xsrc=geany.desktop
+text/x-chdr=geany.desktop
+text/x-csrc=geany.desktop
+text/x-dtd=geany.desktop
+text/x-java=geany.desktop
+text/mathml=geany.desktop
+text/x-python=geany.desktop
+text/x-sql=geany.desktop
+text/xml=geany.desktop
