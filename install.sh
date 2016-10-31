@@ -12,4 +12,5 @@ if [ "$#" == 0 ] || [ "$1" == "BASH" ]; then
   ln -s "$HOME/me212bashrc/.bash_aliases" "$HOME/.bash_aliases"
   cp -r $HOME/me212bashrc/.config $HOME/.config
   cp -r $HOME/me212bashrc/.local $HOME/.local
+  sudo cp $HOME/me212bashrc/etc/rc.local /etc/rc.local
 fi
