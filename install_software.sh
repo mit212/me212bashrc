@@ -87,6 +87,7 @@ if [ "$#" == 0 ] || [ "$1" == "LCM" ]; then
 fi
 
 if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
+  mkdir -p $HOME/software
   cd $HOME/software
   git clone https://github.com/mit212/libbot.git
   cd libbot
