@@ -88,7 +88,7 @@ fi
 
 if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
   cd $HOME/software
-  git clone git@github.com:RobotLocomotion/libbot.git
+  git clone https://github.com/mit212/libbot.git
   cd libbot
   make -j
   sudo cp -r build/* /usr/local/
