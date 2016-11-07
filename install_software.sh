@@ -145,7 +145,8 @@ fi
 if [ "$#" == 0 ] || [ "$1" == "APRILTAGCPP" ]; then
     mkdir -p $HOME/software
     cd $HOME/software
-    git clone git@github.com:personalrobotics/apriltags-cpp.git
+    #git clone git@github.com:personalrobotics/apriltags-cpp.git
+    git clone https://github.com/mit212/apriltags-cpp.git
     cd apriltags-cpp
     mkdir build
     cd build
