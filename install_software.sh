@@ -92,6 +92,7 @@ if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
   git clone https://github.com/mit212/libbot.git
   cd libbot
   make -j
+  sudo cp -r ../build/* /usr/local/  # some weird situation for VM ware
   sudo cp -r build/* /usr/local/
 fi
 
