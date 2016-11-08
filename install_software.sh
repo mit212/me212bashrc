@@ -121,6 +121,7 @@ if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     sudo cp dynamixel/MX/MX_106.device dynamixel/MX/MX106.device
     sudo cp dynamixel/AX/AX_12A.device dynamixel/AX/AX12A.device
     
+    sudo cp joint_state_publisher/joint_state_publisher /opt/ros/kinetic/lib/joint_state_publisher/joint_state_publisher
 fi
 
 
