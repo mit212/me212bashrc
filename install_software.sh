@@ -56,8 +56,9 @@ if [ "$#" == 0 ] || [ "$1" == "ARDUINO" ]; then
     
     
     cd ~/Downloads/
-    wget -P ~/Downloads -q http://web.mit.edu/peterkty/www/shared/arduino/DualMC33926MotorShield.zip
-    unzip -o ~/Downloads/DualMC33926MotorShield.zip -d $HOME/Arduino/libraries
+    git clone https://github.com/mit212/DualMC33926MotorShield.git
+    cp -r DualMC33926MotorShield/ $HOME/Arduino/libraries/
+    rm -rf DualMC33926MotorShield/
     
     cd ~/Downloads/
     git clone https://github.com/mit212/LS7366.git
