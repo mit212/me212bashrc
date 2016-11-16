@@ -63,6 +63,12 @@ if [ "$#" == 0 ] || [ "$1" == "ARDUINO" ]; then
     git clone https://github.com/mit212/LS7366.git
     cp -r LS7366/ $HOME/Arduino/libraries/LS7366
     rm -rf LS7366/
+
+    cd ~/Downloads/
+    git clone https://github.com/mit212/ServoTimer2.git
+    cp -r ServoTimer2/ $HOME/Arduino/libraries/ServoTimer2
+    rm -rf ServoTimer2/
+    
     echo 'ARDUINO install done'
 fi
 
