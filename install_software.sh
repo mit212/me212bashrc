@@ -121,7 +121,7 @@ if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     sudo apt-get --yes install python-rosinstall
     source /opt/ros/kinetic/setup.bash
     
-    sudo apt-get --yes install ros-kinetic-moveit-full
+    sudo apt-get --yes install ros-kinetic-moveit
     sudo apt-get --yes install ros-kinetic-pcl-ros
     sudo apt-get --yes install ros-kinetic-joy
     sudo apt-get --yes install ros-kinetic-perception  # for cv_bridge
