@@ -17,7 +17,7 @@ function ask {
 if [ "$#" == 0 ] || [ "$1" == "APT" ]; then
     echo "Install useful packages from apt-get"
     sudo apt-get update
-    sudo apt-get --yes install git gitk git-gui geany geany-plugins vim terminator meshlab recordmydesktop meld sagasu openssh-server retext filezilla vlc ipython mesa-utils bmon libyaml-0-2
+    sudo apt-get --yes install git gitk git-gui geany geany-plugins vim terminator meshlab recordmydesktop meld sagasu openssh-server retext filezilla vlc ipython mesa-utils bmon libyaml-0-2 python-pip
     sudo apt-get --yes install hardinfo cpufrequtils   # for speedup cpu
         
     sudo apt-get --yes install kcachegrind kcachegrind-converters
