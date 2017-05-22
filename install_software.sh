@@ -95,22 +95,10 @@ if [ "$#" == 0 ] || [ "$1" == "LCM" ]; then
   unzip -o ~/Downloads/lcm-1.3.1.zip -d $HOME/software
   
   cd $HOME/software/lcm-1.3.1
-  ./bootstrap.sh
   ./configure
   make
   sudo make install
 fi
-
-if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
-  mkdir -p $HOME/software
-  cd $HOME/software
-  git clone https://github.com/mit212/libbot.git
-  cd libbot
-  make -j
-  sudo cp -r ../build/* /usr/local/  # some weird situation for VM ware
-  sudo cp -r build/* /usr/local/
-fi
-
 
 if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     echo "Install ROS Kinetic"
@@ -139,6 +127,16 @@ if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     
     sudo cp joint_state_publisher/joint_state_publisher /opt/ros/kinetic/lib/joint_state_publisher/joint_state_publisher
 fi
+
+if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
+  mkdir -p $HOME/software
+  cd $HOME/software
+  git clone https://github.com/mit212/libbot.git
+  cd libbot
+  make -j
+  sudo cp -r build/* /usr/local/
+fi
+
 
 if [ "$#" == 0 ] || [ "$1" == "APRILTAGCPP" ]; then
     mkdir -p $HOME/software
