@@ -46,7 +46,7 @@ fi
 
 if [ "$#" == 0 ] || [ "$1" == "ARDUINO" ]; then
     cd ~/Downloads/
-    wget -O arduino-1.6.11-linux64.tar.xz -P ~/Downloads http://web.mit.edu/peterkty/www/shared/arduino/arduino-1.6.11-linux64.tar.xz  
+    wget -O arduino-1.6.11-linux64.tar.xz -P ~/Downloads https://downloads.arduino.cc/arduino-1.6.11-linux64.tar.xz
     mkdir -p $HOME/software
     tar -xvf ~/Downloads/arduino-1.6.11-linux64.tar.xz -C $HOME/software
     cd $HOME/software/arduino-1.6.11
@@ -71,18 +71,6 @@ if [ "$#" == 0 ] || [ "$1" == "ARDUINO" ]; then
     rm -rf ServoTimer2/
     
     echo 'ARDUINO install done'
-fi
-
-if [ "$#" == 1 ] && [ "$1" == "MATLABBYCOPY" ]; then
-    echo "Please download matlab to ~/Downloads/MATLAB.tar.gz"
-    ask "Ready? [y/N]" 
-    tar -zxf ~/Downloads/MATLAB.tar.gz -C ~/
-    
-    sudo ln -s $HOME/MATLAB/R2016b/bin/matlab /usr/local/bin/matlab
-    sudo ln -s $HOME/MATLAB/R2016b/bin/mbuild /usr/local/bin/mbuild
-    sudo ln -s $HOME/MATLAB/R2016b/bin/mcc /usr/local/bin/mcc
-    sudo ln -s $HOME/MATLAB/R2016b/bin/mex /usr/local/bin/mex
-    matlab
 fi
 
 if [ "$#" == 0 ] || [ "$1" == "LCM" ]; then
@@ -135,26 +123,6 @@ if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     sudo cp dynamixel/AX/AX_12A.device dynamixel/AX/AX12A.device
     
     sudo cp joint_state_publisher/joint_state_publisher /opt/ros/kinetic/lib/joint_state_publisher/joint_state_publisher
-fi
-
-
-if [ "$#" == 1 ] && [ "$1" == "MATLAB" ]; then
-    echo "Please download matlab to ~/Downloads/matlab_R2016b_glnxa64.zip"
-    ask "Ready? [y/N]" 
-    cd ~/Downloads/
-    unzip -o matlab_R2016b_glnxa64.zip -d matlab_R2016b_glnxa64
-    cd matlab_R2016b_glnxa64
-    echo "In the install wizard, install the matlab to your home folder e.g. $HOME/MATLAB/R2016b"
-    ./install
-    
-    sudo rm /usr/local/bin/matlab
-    sudo rm /usr/local/bin/mbuild
-    sudo rm /usr/local/bin/mcc
-    sudo rm /usr/local/bin/mex
-    sudo ln -s $HOME/MATLAB/R2016b/bin/matlab /usr/local/bin/matlab
-    sudo ln -s $HOME/MATLAB/R2016b/bin/mbuild /usr/local/bin/mbuild
-    sudo ln -s $HOME/MATLAB/R2016b/bin/mcc /usr/local/bin/mcc
-    sudo ln -s $HOME/MATLAB/R2016b/bin/mex /usr/local/bin/mex
 fi
 
 if [ "$#" == 0 ] || [ "$1" == "APRILTAGCPP" ]; then
