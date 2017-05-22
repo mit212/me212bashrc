@@ -117,10 +117,6 @@ if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     sudo apt-get --yes install ros-kinetic-joy
     sudo apt-get --yes install ros-kinetic-perception  # for cv_bridge
     sudo apt-get --yes install ros-kinetic-dynamixel-* # dynamixel
-    
-    cd /opt/ros/kinetic/share/dynamixel_workbench_toolbox/
-    
-    sudo cp joint_state_publisher/joint_state_publisher /opt/ros/kinetic/lib/joint_state_publisher/joint_state_publisher
 fi
 
 if [ "$#" == 0 ] || [ "$1" == "LIBBOT" ]; then
