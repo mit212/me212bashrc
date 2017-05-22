@@ -119,11 +119,6 @@ if [ "$#" == 0 ] || [ "$1" == "ROSK" ]; then
     sudo apt-get --yes install ros-kinetic-dynamixel-* # dynamixel
     
     cd /opt/ros/kinetic/share/dynamixel_workbench_toolbox/
-    sudo mkdir dynamixel
-    sudo cp -r AX EX MX PR RX XL XM dynamixel/
-    sudo cp dynamixel/MX/MX_64.device dynamixel/MX/MX64.device
-    sudo cp dynamixel/MX/MX_106.device dynamixel/MX/MX106.device
-    sudo cp dynamixel/AX/AX_12A.device dynamixel/AX/AX12A.device
     
     sudo cp joint_state_publisher/joint_state_publisher /opt/ros/kinetic/lib/joint_state_publisher/joint_state_publisher
 fi
