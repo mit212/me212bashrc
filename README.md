@@ -17,7 +17,7 @@ cd ~/me212bashrc
 ```
 
 ## Usage
-For staff attempting to test the installation, and students working on their **final** projects, the [prc repo](https://github.com/mit212/prc) holds essentially the sum of all the labs, completed, so that students can work from an organized and identical starting point.  This can be cloned and tested without hardware to ensure proper installation:
+For staff attempting to test the installation, and students working on their **final** projects, the [prc repo](https://github.com/mit212/prc) holds essentially the sum of all the labs, completed, so that students can work from an organized and identical starting point.  This can be cloned and tested without hardware to ensure proper installation, **in a new terminal**:
 ```bash
 cd ~
 git clone https://github.com/mit212/prc.git
